@@ -1,29 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Shrey's Profile Card</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shrey Patel — Computer Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<main>
-		<img src="img/placeholder.png" alt="Profile photo" class="avatar">
-		<h1>Shrey</h1>
-		<p>Frontend Developer</p>
-		<p>I build clean, responsive web experiences with a focus on simple design and solid user experience.</p>
-		<h2> My favorite Websites</h2>
-		<ul>
-			<li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
-			<li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
-			<li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
-			<li><a href="https://alistapart.com/" target="_blank" rel="noopener">A List Apart</a></li>
-		</ul>
-	</main>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="#hero" class="nav-logo" aria-label="Home">
+      <img src="img/Car 2.png" alt="Car logo" class="nav-logo-img" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about"><i class="fa-solid fa-user" style="margin-right:0.4rem;font-size:0.7rem;"></i>About</a></li>
+      <li><a href="#skills"><i class="fa-solid fa-code" style="margin-right:0.4rem;font-size:0.7rem;"></i>Skills</a></li>
+      <li><a href="#projects"><i class="fa-solid fa-diagram-project" style="margin-right:0.4rem;font-size:0.7rem;"></i>Projects</a></li>
+      <li><a href="#gallery"><i class="fa-solid fa-image" style="margin-right:0.4rem;font-size:0.7rem;"></i>Gallery</a></li>
+      <li><a href="#contact"><i class="fa-solid fa-satellite-dish" style="margin-right:0.4rem;font-size:0.7rem;"></i>Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="speed-lines" id="speedLines"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><i class="fa-solid fa-gauge-high"></i> &nbsp; Engine Start — Portfolio v8.0</p>
+      <h1 class="hero-name">
+        <span class="accent">Shrey</span><br>
+        <span class="accent2">Patel</span>
+      </h1>
+      <p class="hero-title">Computer Engineer</p>
+      <a href="#about" class="hero-cta">
+        <i class="fa-solid fa-chevron-down"></i> Explore
+      </a>
+    </div>
+    <div class="rpm-bar">
+      <span class="rpm-label"><i class="fa-solid fa-tachometer-alt"></i> &nbsp;RPM</span>
+      <div class="rpm-track"><div class="rpm-fill"></div></div>
+      <span class="rpm-label">7800</span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-tag">// 01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Motivated and curious computer engineering student seeking an internship position to apply programming proficiency and analytical problem-solving skills in a technical, team-oriented environment.
+        </p>
+        <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--neon);letter-spacing:0.1em;">
+          <i class="fa-solid fa-microchip"></i> &nbsp; Engineering the future, one line at a time.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <i class="fa-solid fa-code-branch"></i>
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-layer-group"></i>
+          <div class="stat-num">4</div>
+          <div class="stat-label">Languages</div>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-users"></i>
+          <div class="stat-num">Team</div>
+          <div class="stat-label">Collaborative</div>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-bolt"></i>
+          <div class="stat-num">Fast</div>
+          <div class="stat-label">Problem Solver</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-tag">// 02</span>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid" id="skillsGrid">
+      <div class="skill-card">
+        <i class="fa-brands fa-python"></i>
+        <div class="skill-name">Python</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="88%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-js"></i>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="80%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-java"></i>
+        <div class="skill-name">Java</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="75%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-cube"></i>
+        <div class="skill-name">Inventor</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="70%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-html5"></i>
+        <div class="skill-name">HTML / CSS</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="82%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-github"></i>
+        <div class="skill-name">GitHub</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="78%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-tag">// 03</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 4.5v3.2c0 .6-.2 1.2-.6 1.7L5.7 12c-.4.5-.6 1.1-.6 1.8V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.8 6.2c1.8 1.5 2.7 3.5 2.7 6 0 3.3-2.6 6.3-6.4 6.3-1.7 0-3.1-.5-4.3-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 18.5c0 .8.6 1.5 1.4 1.5h3.8c1.1 0 2-.9 2-2v-1.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16.7" cy="7" r="1.1" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="project-name">Prosthetic Arm</div>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">
+            Built a simulation of how a prosthetic arm would function with the help of GitHub, using C#, HTML, and JavaScript to model realistic limb behavior.
+          </p>
+          <div class="project-tags">
+            <span class="tag red">CSS</span>
+            <span class="tag neon">HTML</span>
+            <span class="tag neon">JavaScript</span>
+            <span class="tag">GitHub</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-flag-checkered"></i></div>
+          <div class="project-name">Overtake</div>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">
+            Led a team of 4 to develop a program predicting Formula 1 race times and optimal race windows. Analyzed tire wear, track conditions, and selection. Leveraged Gemini for AI-driven insights.
+          </p>
+          <div class="project-tags">
+            <span class="tag red">Python</span>
+            <span class="tag neon">JavaScript</span>
+            <span class="tag neon">HTML</span>
+            <span class="tag red">CSS</span>
+            <span class="tag">Shell</span>
+            <span class="tag">Batchfile</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-pills"></i></div>
+          <div class="project-name">Pharmacy Website</div>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">
+            Developed a pharmacy management website organizing patient data and automating refill/appointment notifications to pharmacists. Resolved 15+ bugs, improving overall performance by 10%.
+          </p>
+          <div class="project-tags">
+            <span class="tag red">JavaScript</span>
+            <span class="tag neon">HTML</span>
+            <span class="tag">UI Design</span>
+            <span class="tag">Bug Fixes</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-header" style="justify-content:center;">
+      <span class="section-tag">// 05</span>
+      <h2 class="section-title">Contact</h2>
+    </div>
+    <div class="contact-inner">
+      <p class="contact-tagline">
+        <i class="fa-solid fa-gears" style="color:var(--neon);margin-right:0.5rem;"></i>
+        Let's stay fueled up and build the ultimate machine together!
+      </p>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/shrey-patel-0b47a93a4" target="_blank" class="contact-btn">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p class="footer-copy">© 2026 <span>Shrey Patel</span> — All Rights Reserved</p>
+    <div class="footer-dot"></div>
+    <p class="footer-copy" style="font-size:0.62rem;">Built with <span>♥</span> &amp; HTML/CSS/GitHub</p>
+  </footer>
+
+  <!-- ── JS ── -->
+  <script>
+    /* Custom cursor */
+    const cursor     = document.getElementById('cursor');
+    const cursorRing = document.getElementById('cursorRing');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left     = e.clientX + 'px';
+      cursor.style.top      = e.clientY + 'px';
+      cursorRing.style.left = e.clientX + 'px';
+      cursorRing.style.top  = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button, .skill-card, .project-card, .gallery-item').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width  = '20px';
+        cursor.style.height = '20px';
+        cursorRing.style.width  = '52px';
+        cursorRing.style.height = '52px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width  = '12px';
+        cursor.style.height = '12px';
+        cursorRing.style.width  = '36px';
+        cursorRing.style.height = '36px';
+      });
+    });
+
+    /* Speed lines */
+    const container = document.getElementById('speedLines');
+    for (let i = 0; i < 18; i++) {
+      const line = document.createElement('span');
+      const top  = Math.random() * 100;
+      const w    = 80 + Math.random() * 200;
+      const dur  = 2 + Math.random() * 3;
+      const del  = Math.random() * 5;
+      line.style.cssText = `
+        top:${top}%; width:${w}px; left:-${w}px;
+        animation-duration:${dur}s;
+        animation-delay:${del}s;
+        animation-iteration-count:infinite;
+      `;
+      container.appendChild(line);
+    }
+
+    /* Skill bar animation on scroll */
+    const skillObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.skill-bar').forEach(bar => {
+            bar.style.width = bar.dataset.width;
+          });
+          skillObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    skillObserver.observe(document.getElementById('skillsGrid'));
+
+    /* Active nav highlight */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav-links a');
+    const navObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(a => {
+            a.style.color = a.getAttribute('href') === '#' + e.target.id
+              ? 'var(--neon)' : '';
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+    sections.forEach(s => navObs.observe(s));
+
+  </script>
 </body>
 
 </html>
+
