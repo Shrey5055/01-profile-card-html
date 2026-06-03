@@ -389,6 +389,9 @@ section { padding: 7rem 8vw; position: relative; }
   background: var(--panel);
   overflow: hidden;
   position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
   transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 .project-card:hover {
